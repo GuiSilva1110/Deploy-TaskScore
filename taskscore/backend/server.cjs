@@ -408,6 +408,8 @@ app.post("/auth/login", (req, res) => {
   );
 });
 
-app.listen(3002, () => {
-  console.log("Backend TaskScore com SQLite rodando em http://localhost:3002");
+const PORT = process.env.PORT || 3002;
+
+app.listen(PORT, () => {
+  console.log(`Backend TaskScore com SQLite rodando na porta ${PORT}`);
 });
