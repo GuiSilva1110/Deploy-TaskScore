@@ -41,7 +41,7 @@ import {
   YAxis,
 } from "recharts";
 
-const API_URL = "http://localhost:3002";
+const API_URL = "https://deploy-taskscore-1.onrender.com";
 
 
 const colors = {
