@@ -4,6 +4,10 @@ const db = require("./database/db.cjs");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const app = express();
+const db = require("./database/db.cjs");
+const tasksRoutes = require("./routes/tasks.js");
+const techniciansRoutes = require("./routes/technicians.js");
+const notificationsRoutes = require("./routes/notifications.js");
 const PORT = process.env.PORT || 3002;
 
 app.listen(PORT, () => {
