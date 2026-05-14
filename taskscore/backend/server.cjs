@@ -4,16 +4,12 @@ const db = require("./database/db.cjs");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const app = express();
-const db = require("./database/db.cjs");
 const tasksRoutes = require("./routes/tasks.js");
 const techniciansRoutes = require("./routes/technicians.js");
 const notificationsRoutes = require("./routes/notifications.js");
-const PORT = process.env.PORT || 3002;
 
-app.listen(PORT, () => {
-  console.log(`Backend rodando na porta ${PORT}`);
-});
 const JWT_SECRET = "taskscore_secret_dev";
+
 app.use(cors());
 app.use(express.json());
 
